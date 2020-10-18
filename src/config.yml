@@ -1,0 +1,13 @@
+database:
+  host: localhost
+  port: 3306
+  user: user
+  password: password
+  database: database
+
+bot:
+  token: bot.token
+  main_guild_id: 0
+  main_discord_plugin_category_id: 0
+  main_discord_plugin_channel_id: 0
+  react_message_id: 0

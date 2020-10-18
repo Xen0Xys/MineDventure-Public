@@ -1,0 +1,89 @@
+author: Xen0Xys
+name: MineDventure
+version: 1.0
+api-version: 1.16
+main: fr.xen0xys.minedventure.MineDventure
+load: POSTWORLD
+softdepend:
+  - JDASpigot
+  - SkinsRestorer
+  - Vault
+
+commands:
+  login:
+    aliases: [l]
+    permission: minedventure.login
+  logout:
+    permission: minedventure.logout
+  forcelogin:
+    permission: minedventure.forcelogin
+  changepassword:
+    permission: minedventure.changepassword
+  createaccount:
+    permission: minedventure.createaccount
+  money:
+    aliases: [balance, bal]
+    permission: minedventure.money
+  addmoney:
+    permission: minedventure.addmoney
+  setmoney:
+    permission: minedventure.setmoney
+  pay:
+    permission: minedventure.pay
+  changename:
+    permission: minedventure.changename
+  pardonkiller:
+    permission: minedventure.pardonkiller
+  extendkiller:
+    permission: minedventure.extendkiller
+  creative:
+    permission: minedventure.creative
+  survival:
+    permission: minedventure.survival
+
+permissions:
+  minedventure.*:
+    description: Gives access to all MineDventure commands
+    children:
+      minedventure.login: true
+      minedventure.logout: true
+      minedventure.forcelogin: true
+      minedventure.changepassword: true
+      minedventure.createaccount: true
+      minedventure.money: true
+      minedventure.addmoney: true
+      minedventure.setmoney: true
+      minedventure.pay: true
+      minedventure.changename: true
+      minedventure.pardonkiller: true
+      minedventure.extendkiller: true
+      minedventure.creative: true
+      minedventure.survival: true
+  minedventure.login:
+    default: true
+  minedventure.logout:
+    default: true
+  minedventure.forcelogin:
+    default: op
+  minedventure.changepassword:
+    default: true
+  minedventure.createaccount:
+    default: op
+  minedventure.money:
+    default: true
+  minedventure.addmoney:
+    default: op
+  minedventure.setmoney:
+    default: op
+  minedventure.pay:
+    default: true
+  minedventure.changename:
+    default: true
+  minedventure.pardonkiller:
+    default: true
+  minedventure.extendkiller:
+    default: op
+  minedventure.creative:
+    default: true
+  minedventure.survival:
+    default: true
